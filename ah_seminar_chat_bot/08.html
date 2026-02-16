@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ノコロク スマートストックのご紹介</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            margin: 0;
+        }
+        .text-accent { color: #0288D1; }
+        .bg-accent { background-color: #0288D1; }
+        .text-epon { color: #4A8C5C; }
+        .bg-epon { background-color: #4A8C5C; }
+        .bg-epon-light { background-color: #EBF5EE; }
+        .border-epon { border-color: #4A8C5C; }
+        .card-shadow {
+            box-shadow: 0 10px 30px -5px rgba(74, 140, 92, 0.15);
+        }
+    </style>
+</head>
+<body class="flex flex-col relative bg-white">
+<!-- Decorative Background -->
+<div class="absolute top-0 left-0 w-full h-3 bg-epon"></div>
+<div class="absolute top-[-40px] right-[-40px] w-56 h-56 rounded-full bg-green-50 opacity-50 z-0"></div>
+<div class="absolute bottom-[-30px] left-[-30px] w-40 h-40 rounded-full bg-green-50 opacity-40 z-0"></div>
+<div class="absolute bottom-0 left-0 w-full h-3 bg-epon"></div>
+<!-- Main Content -->
+<div class="flex-1 w-full h-full flex flex-col p-12 relative z-10">
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-6">
+        <div>
+            <div class="inline-block px-5 py-2 rounded-full bg-epon-light border border-green-200 text-epon font-bold text-lg mb-2">
+                <i class="fas fa-bullhorn mr-2"></i>e-PONの自社プロダクト
+            </div>
+            <h1 class="text-4xl font-black text-gray-800 tracking-tight">
+                ノコロク <span class="text-epon">スマートストック</span>
+            </h1>
+            <p class="text-gray-500 font-bold text-xl mt-1">誰でもカンタン、まとめて発注。</p>
+        </div>
+    </div>
+    <!-- What is it -->
+    <div class="bg-epon-light rounded-2xl p-6 mb-6 border border-green-200">
+        <p class="text-gray-700 font-bold text-lg leading-relaxed">
+            <span class="text-epon font-black text-xl">ノコロク スマートストック</span>は、
+            複数の卸業者への発注作業を一つにまとめられる<span class="text-epon font-black">発注自動化ツール</span>です。<br/>
+            発注したい薬を選んで実行するだけで、各卸業者へ自動で発注を送信します。
+        </p>
+    </div>
+    <!-- Feature Cards -->
+    <div class="flex gap-6 flex-1">
+        <!-- Feature 1 -->
+        <div class="flex-1 bg-white rounded-2xl border-2 border-gray-100 p-6 card-shadow flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-2xl bg-epon-light text-epon flex items-center justify-center text-3xl mb-4">
+                <i class="fas fa-boxes-stacked"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">まとめて簡単発注</h3>
+            <p class="text-gray-500 font-medium text-sm leading-relaxed flex-1">
+                複数の卸フォームを<br/>
+                行き来する必要なし。<br/>
+                必要な薬を選ぶだけで<br/>
+                <span class="text-epon font-bold">一括発注が可能</span>
+            </p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="flex-1 bg-white rounded-2xl border-2 border-gray-100 p-6 card-shadow flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-2xl bg-epon-light text-epon flex items-center justify-center text-3xl mb-4">
+                <i class="fas fa-clipboard-list"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">発注履歴管理</h3>
+            <p class="text-gray-500 font-medium text-sm leading-relaxed flex-1">
+                誰が・いつ・何を<br/>
+                発注したかを自動記録。<br/>
+                発注の属人化を防ぎ<br/>
+                <span class="text-epon font-bold">業務の標準化</span>を促進
+            </p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="flex-1 bg-white rounded-2xl border-2 border-gray-100 p-6 card-shadow flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-2xl bg-epon-light text-epon flex items-center justify-center text-3xl mb-4">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">過剰・欠品ゼロ</h3>
+            <p class="text-gray-500 font-medium text-sm leading-relaxed flex-1">
+                発注状況が見える化され<br/>
+                二重発注や発注漏れを防止。<br/>
+                <span class="text-epon font-bold">過剰・欠品リスク</span>を<br/>
+                軽減します
+            </p>
+        </div>
+    </div>
+    <!-- CTA -->
+    <div class="mt-6 bg-epon rounded-2xl p-5 flex items-center justify-between shadow-lg">
+        <div class="flex items-center gap-4 text-white">
+            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-epon text-xl flex-shrink-0">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+                <p class="text-xl font-bold">ご興味のある方はお気軽にお問い合わせください</p>
+                <p class="text-green-100 font-medium text-sm">チャットボットと合わせてのご相談も歓迎です</p>
+            </div>
+        </div>
+        <div class="bg-white text-epon px-6 py-3 rounded-full font-bold flex items-center gap-2 shadow-md flex-shrink-0">
+            <i class="fas fa-envelope"></i> support@e-ponvet.com
+        </div>
+    </div>
+</div>
+</body>
+</html>

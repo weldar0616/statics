@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>講師紹介</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            margin: 0;
+        }
+        .text-accent { color: #0288D1; }
+        .bg-accent { background-color: #0288D1; }
+        .bg-subtle { background-color: #E1F5FE; }
+        .border-accent { border-color: #0288D1; }
+        .card-shadow {
+            box-shadow: 0 10px 30px -5px rgba(2, 136, 209, 0.15);
+        }
+    </style>
+</head>
+<body class="flex flex-col relative">
+<!-- Decorative Background -->
+<div class="absolute top-0 left-0 w-full h-3 bg-accent"></div>
+<div class="absolute bottom-[-60px] right-[-60px] w-72 h-72 rounded-full bg-blue-50 opacity-50 z-0"></div>
+<div class="absolute top-[-30px] left-[-30px] w-40 h-40 rounded-full bg-blue-50 opacity-40 z-0"></div>
+<!-- Background Icon -->
+<div class="absolute bottom-16 right-16 text-blue-50 text-9xl z-0 transform rotate-6">
+    <i class="fas fa-stethoscope"></i>
+</div>
+<!-- Main Content -->
+<div class="flex-1 w-full h-full flex flex-col p-12 relative z-10">
+    <!-- Header -->
+    <div class="mb-6 pl-4 border-l-8 border-accent">
+        <p class="text-accent font-bold text-xl mb-1 tracking-widest">SPEAKER</p>
+        <h1 class="text-5xl font-black text-gray-800 tracking-tight">講師紹介</h1>
+    </div>
+    <!-- Profile Section -->
+    <div class="flex-1 flex items-center gap-10 px-4">
+        <!-- Photo Area -->
+        <div class="flex-shrink-0 flex flex-col items-center">
+            <div class="w-52 h-52 rounded-full border-4 border-white card-shadow overflow-hidden">
+                <img src="プロフィール画像_肩上.png" alt="講師写真" class="w-full h-full object-cover"/>
+            </div>
+            <div class="mt-4 text-center">
+                <p class="text-4xl font-black text-gray-800">尾形 光洋</p>
+                <p class="text-accent font-bold text-lg mt-1">Mitsuhiro Ogata</p>
+            </div>
+        </div>
+        <!-- Profile Details -->
+        <div class="flex-1 flex flex-col gap-4">
+            <!-- Title / Role -->
+            <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-blue-50 border border-blue-100 text-accent font-bold text-lg self-start">
+                <i class="fas fa-code"></i>
+                <p>ソフトウェアエンジニア（7年目）</p>
+            </div>
+            <!-- Affiliation -->
+            <div class="flex items-center gap-3 px-2">
+                <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 flex items-center justify-center text-sm">
+                    <i class="fas fa-building"></i>
+                </div>
+                <p class="text-gray-600 font-bold text-lg">株式会社e-PON ／ 個人事業主</p>
+            </div>
+            <!-- Bio Cards -->
+            <div class="grid grid-cols-3 gap-4 mt-2">
+                <div class="bg-white rounded-2xl border-2 border-gray-100 p-5 card-shadow flex flex-col items-center text-center">
+                    <div class="w-14 h-14 rounded-full bg-red-50 text-red-400 flex items-center justify-center text-2xl mb-3">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-700 mb-1">犬2頭と暮らしてます</h3>
+                    <p class="text-gray-500 font-medium text-sm leading-relaxed">チワワ 1頭<br/>キャバリア 1頭</p>
+                </div>
+                <div class="bg-white rounded-2xl border-2 border-gray-100 p-5 card-shadow flex flex-col items-center text-center">
+                    <div class="w-14 h-14 rounded-full bg-yellow-50 text-yellow-500 flex items-center justify-center text-2xl mb-3">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-700 mb-1">2歳児のパパ</h3>
+                    <p class="text-gray-500 font-medium text-sm leading-relaxed">毎日育児と<br/>コーディングの両立</p>
+                </div>
+                <div class="bg-white rounded-2xl border-2 border-gray-100 p-5 card-shadow flex flex-col items-center text-center">
+                    <div class="w-14 h-14 rounded-full bg-blue-50 text-accent flex items-center justify-center text-2xl mb-3">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-700 mb-1">最近の趣味</h3>
+                    <p class="text-gray-500 font-medium text-sm leading-relaxed">生成AIを活用した<br/>アプリ開発</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

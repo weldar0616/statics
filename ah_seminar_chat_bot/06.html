@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>まとめ</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            margin: 0;
+        }
+        .text-accent { color: #0288D1; }
+        .bg-accent { background-color: #0288D1; }
+        .bg-subtle { background-color: #E1F5FE; }
+        .border-accent { border-color: #0288D1; }
+        
+        /* Custom layout utilities */
+        .card-shadow {
+            box-shadow: 0 10px 30px -5px rgba(2, 136, 209, 0.15);
+        }
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="flex flex-col relative bg-white">
+<!-- Decorative Background -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-blue-50 rounded-bl-full opacity-60 z-0"></div>
+<div class="absolute bottom-0 left-0 w-full h-4 bg-accent z-20"></div>
+<!-- Main Content Container -->
+<div class="flex-1 w-full h-full flex flex-col p-12 relative z-10">
+<!-- Header -->
+<div class="mb-8 border-b-2 border-blue-100 pb-4">
+<p class="text-accent font-bold text-lg mb-1 tracking-widest uppercase">SUMMARY</p>
+<h1 class="text-5xl font-black text-gray-800 tracking-tight">
+                今日やったこと <span class="text-gray-300 mx-2">=</span> <span class="text-accent underline decoration-4 decoration-blue-200 underline-offset-4">vibe coding</span>
+</h1>
+</div>
+<!-- Two Columns Layout -->
+<div class="flex flex-1 gap-12">
+<!-- Left Column: Review (Concept) -->
+<div class="flex-1 flex flex-col justify-center space-y-5">
+<!-- Item 1 -->
+<div class="flex items-center bg-blue-50 rounded-2xl p-5 border border-blue-100">
+<div class="icon-circle bg-white text-accent text-2xl mr-6 shadow-sm flex-shrink-0">
+<i class="fas fa-brain"></i>
+</div>
+<div>
+<p class="text-sm font-bold text-accent mb-1">AI活用 その1</p>
+<p class="text-xl font-bold text-gray-700">Geminiで<br/>自院の情報を取得</p>
+</div>
+</div>
+<!-- Plus Icon -->
+<div class="text-center text-gray-300 text-2xl py-1">
+<i class="fas fa-plus"></i>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center bg-blue-50 rounded-2xl p-5 border border-blue-100">
+<div class="icon-circle bg-white text-accent text-2xl mr-6 shadow-sm flex-shrink-0">
+<i class="fas fa-laptop-code"></i>
+</div>
+<div>
+<p class="text-sm font-bold text-accent mb-1">AI活用 その2</p>
+<p class="text-xl font-bold text-gray-700">AI Studioで<br/>アプリを生成・修正</p>
+</div>
+</div>
+<!-- Equals / Result -->
+<div class="text-center pt-2">
+<p class="text-accent text-xl font-bold mb-3"><i class="fas fa-arrow-down mr-2"></i>2つのAIを組み合わせる</p>
+<div class="bg-accent text-white rounded-2xl p-4 text-center shadow-lg transform scale-100 mx-4">
+<p class="text-2xl font-black tracking-wider"><i class="fas fa-check-circle mr-2"></i>自分専用のツールが作れる！</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Next Steps & Tips -->
+<div class="flex-1 flex flex-col justify-between">
+<!-- Tips: Share URL -->
+<div class="bg-white border-2 border-gray-100 rounded-3xl p-8 card-shadow relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-yellow-400 text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase">Tips</div>
+<h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+<i class="fas fa-share-nodes text-accent mr-3"></i>作ったアプリを共有
+                    </h3>
+<div class="flex items-center gap-4 text-gray-600 font-bold text-lg bg-gray-50 p-4 rounded-xl mb-4">
+<span class="bg-white border border-gray-300 px-3 py-1 rounded shadow-sm text-sm">Share</span>
+<i class="fas fa-arrow-right text-gray-400"></i>
+<span class="bg-accent text-white border border-accent px-3 py-1 rounded shadow-sm text-sm">Publish</span>
+</div>
+<p class="text-gray-500 font-medium text-sm leading-relaxed">
+                        発行されたURLを送れば、スマホでもPCでも誰でも使えます。院内スタッフへの共有も簡単です。
+                    </p>
+</div>
+<!-- CTA: Production -->
+<div class="bg-blue-50 border-2 border-dashed border-accent rounded-3xl p-8 relative mt-6 flex-1 flex flex-col justify-center items-center text-center">
+<div class="w-14 h-14 bg-white rounded-full flex items-center justify-center text-accent text-2xl mb-3 shadow-sm">
+<i class="fas fa-rocket"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-800 mb-2">ここから先（本番化）が必要なら...</h3>
+<p class="text-gray-600 font-medium mb-6 text-sm">
+                        「もっと機能を追加したい」「セキュリティを強化したい」など、<br/>
+                        本格的な運用をお考えの際はご相談ください。
+                    </p>
+<div class="inline-block bg-accent text-white px-8 py-3 rounded-full font-bold shadow-md">
+                        一緒にやれます <i class="fas fa-handshake ml-2"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

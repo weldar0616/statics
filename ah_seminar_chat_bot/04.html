@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ゼロから作る手順</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            margin: 0;
+        }
+        .text-accent {
+            color: #0288D1;
+        }
+        .bg-accent {
+            background-color: #0288D1;
+        }
+        .bg-subtle {
+            background-color: #E1F5FE;
+        }
+        .step-circle {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.75rem;
+            position: relative;
+            z-index: 10;
+        }
+        .step-card {
+            transition: transform 0.3s ease;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="flex flex-col relative">
+<!-- Decorative Background -->
+<div class="absolute top-0 left-0 w-full h-4 bg-accent"></div>
+<div class="absolute bottom-[-100px] right-[-50px] w-80 h-80 rounded-full bg-blue-50 opacity-60 z-0"></div>
+<div class="absolute top-[100px] left-[-40px] w-40 h-40 rounded-full bg-blue-50 opacity-40 z-0"></div>
+<!-- Main Content -->
+<div class="flex-1 w-full h-full flex flex-col p-12 relative z-10">
+<!-- Header -->
+<div class="mb-8 pl-4 border-l-8 border-accent">
+<p class="text-accent font-bold text-xl mb-1 tracking-widest">HOW TO MAKE</p>
+<h1 class="text-5xl font-black text-gray-800 tracking-tight">ゼロから作る手順</h1>
+</div>
+<!-- Timeline Container -->
+<div class="flex-1 flex flex-col justify-center mb-8">
+<div class="relative w-full px-16">
+<!-- Connecting Line -->
+<div class="absolute top-9 left-16 right-16 h-1 bg-blue-100 z-0 rounded-full"></div>
+<div class="grid grid-cols-3 gap-12 relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-center step-card group">
+<div class="step-circle bg-accent text-white mb-8 shadow-lg group-hover:scale-110 transition-transform duration-300">
+<span class="font-sans">1</span>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-lg border border-blue-100 w-full h-64 flex flex-col items-center text-center relative">
+<div class="absolute -top-3 bg-blue-50 text-accent px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Start</div>
+<div class="text-accent text-5xl mb-4 mt-2">
+<i class="fab fa-google"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-800 mb-3">ログイン</h3>
+<p class="text-gray-500 font-medium leading-relaxed">
+                                    Google AI Studioに<br/>ログインして<br/><span class="text-accent font-bold">「Build」</span>を開く
+                                </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center step-card group">
+<div class="step-circle bg-white border-4 border-accent text-accent mb-8 shadow-md group-hover:scale-110 transition-transform duration-300">
+<span class="font-sans">2</span>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-lg border border-blue-100 w-full h-64 flex flex-col items-center text-center relative">
+<div class="text-accent text-5xl mb-4 mt-2">
+<i class="fas fa-paper-plane"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-800 mb-3">プロンプト送信</h3>
+<p class="text-gray-500 font-medium leading-relaxed">
+                                    用意したプロンプトを<br/><span class="text-accent font-bold">そのまま貼って</span><br/>送信ボタンを押す
+                                </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center step-card group">
+<div class="step-circle bg-white border-4 border-accent text-accent mb-8 shadow-md group-hover:scale-110 transition-transform duration-300">
+<span class="font-sans">3</span>
+</div>
+<div class="bg-blue-50 p-8 rounded-2xl shadow-lg border-2 border-accent w-full h-64 flex flex-col items-center text-center relative overflow-hidden">
+<div class="absolute -right-8 -top-8 text-blue-200 text-6xl opacity-50"><i class="fas fa-flag-checkered"></i></div>
+<div class="text-accent text-5xl mb-4 mt-2 relative z-10">
+<i class="fas fa-rocket"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">完成！</h3>
+<p class="text-gray-600 font-bold leading-relaxed relative z-10">
+                                    わずか<br/><span class="text-accent text-3xl">30秒〜1分</span><br/>でアプリが生成完了
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Note -->
+<div class="bg-gray-50 rounded-xl p-4 flex items-center justify-center gap-4 border border-gray-200 mx-auto max-w-2xl">
+<div class="text-accent text-2xl">
+<i class="fas fa-desktop"></i>
+</div>
+<p class="text-gray-600 font-bold text-lg">
+                    講師が画面共有しながら一緒に進めます
+                </p>
+</div>
+</div>
+</body>
+</html>
